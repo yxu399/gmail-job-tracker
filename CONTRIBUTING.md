@@ -1,9 +1,5 @@
 # Contributing to Gmail Job Application Tracker
 
-First off, thank you for considering contributing to this project! 🎉
-
-Job seekers around the world benefit from improvements to this tool, and your contribution makes a real difference.
-
 ## Ways to Contribute
 
 ### 🐛 Report Bugs
