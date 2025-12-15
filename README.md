@@ -1,48 +1,5 @@
 # 📧 Gmail Job Application Tracker
 
-> Automatically track job applications and rejections from your Gmail inbox using AI-powered email classification.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?logo=google&logoColor=white)](https://developers.google.com/apps-script)
-[![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?logo=google&logoColor=white)](https://ai.google.dev/)
-
-**Stop manually tracking job applications.** This Google Apps Script automatically scans your Gmail inbox, classifies job-related emails using Gemini AI, and organizes everything into a Google Sheet—including automatic rejection matching.
-
-[Features](#-features) • [Quick Start](#-quick-start) • [Setup Guide](#-setup-guide) • [How It Works](#-how-it-works) • [FAQ](#-faq)
-
----
-
-## 🎯 Features
-
-### Core Automation
-- ✅ **AI-Powered Classification** - Gemini distinguishes confirmations from rejections automatically
-- ✅ **Smart Data Extraction** - Captures company, position, job ID, location from any email format
-- ✅ **Automatic Rejection Matching** - Matches rejections to applications by Job ID or Position+Company
-- ✅ **Multi-ATS Support** - Works with Greenhouse, Lever, Workday, Ashby, and more
-- ✅ **Daily Automation** - Runs automatically every morning at 7 AM
-- ✅ **Duplicate Prevention** - Never creates the same record twice
-
----
-
-## 📸 Demo
-
-### Applications Dashboard
-Track all applications with status, dates, and direct email links:
-- Position, Job ID, Company, Location
-- Application date and status tracking
-- Direct links back to Gmail threads
-- Automatic status updates from rejections
-
-### Automated Rejection Matching
-When a rejection email arrives, the script:
-1. Extracts company, position, and job ID
-2. Searches Applications tab for a match
-3. Updates status to "Rejected" automatically
-4. Records rejection date in "Last Updated"
-5. Replaces email link with rejection email
-
----
-
 ## 🚀 Quick Start
 
 **Requirements:** Gmail account, Google account
@@ -184,17 +141,6 @@ The script uses a sophisticated multi-step process:
    Replaces email link with rejection link
 ```
 
-### Supported ATS Platforms
-
-The script automatically detects emails from:
-- ✅ Greenhouse (`greenhouse.io`)
-- ✅ Lever (`lever.co`)
-- ✅ Workday (`myworkdayjobs.com`, `myworkday.com`, `workday.com`)
-- ✅ Ashby (`ashbyhq.com`)
-- ✅ Workable (`workable.com`)
-
-**Want to add more?** Edit the `SEARCH_QUERY` variable and submit a PR!
-
 ---
 
 ## 🛠️ Configuration
@@ -321,52 +267,6 @@ The script needs these permissions:
 - ❌ Shares data with third parties
 - ❌ Modifies email content
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-### Add New ATS Platforms
-
-Know an ATS platform the script doesn't support? Add it to `SEARCH_QUERY`:
-
-```javascript
-// Add to line 14
-OR from:(newplatform.com)
-```
-
-Then submit a PR with the platform name and example email.
-
-### Improve Classification
-
-Found emails that Gemini misclassifies? Share examples in an issue (remove personal info first).
-
-### Report Bugs
-
-Open an issue with:
-- What you expected
-- What actually happened
-- Relevant logs (from Execution log)
-
-### Suggest Features
-
-Have an idea? Open an issue with the `enhancement` label.
-
----
-
-## 📝 Roadmap
-
-Planned features:
-
-- [ ] **Weekly Digest Email** - Summary of applications/rejections
-- [ ] **Analytics Dashboard** - Response rates, time-to-rejection stats
-- [ ] **Export Options** - CSV, JSON export
-- [ ] **Interview Tracking** - Detect and track interview invitations
-
-**Want to contribute to these?** Comment on the relevant issue!
-
----
 
 ## ❓ FAQ
 
@@ -423,15 +323,6 @@ You'll receive an email alert. Check the **Executions** log in Apps Script to se
 MIT License - see [LICENSE](LICENSE) file for details.
 
 **TL;DR:** You can use, modify, and distribute this freely. Just keep the license notice.
-
----
-
-## 💬 Support
-
-- **Issues:** [GitHub Issues](../../issues)
-- **Discussions:** [GitHub Discussions](../../discussions)
-
----
 
 <div align="center">
 
